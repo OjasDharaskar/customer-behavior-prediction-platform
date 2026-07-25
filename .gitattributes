@@ -1,0 +1,12 @@
+# Auto-detect text files
+* text=auto
+
+# Force LF for common text files
+*.js text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.sh text eol=lf
+
+# Force CRLF for Windows-specific scripts
+*.bat text eol=crlf
+*.cmd text eol=crlf   
