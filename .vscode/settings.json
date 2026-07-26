@@ -1,6 +1,8 @@
 {
-    "jupyter.notebookFileRoot": "${workspaceFolder}",
     "python.analysis.extraPaths": [
-        "${workspaceFolder}"
+        "C:\\Users\\ojasd\\OneDrive\\Documents\\Desktop\\PProj\\customer-behavior-prediction"
+    ],
+    "python.autoComplete.extraPaths": [
+        "C:\\Users\\ojasd\\OneDrive\\Documents\\Desktop\\PProj\\customer-behavior-prediction"
     ]
 }
