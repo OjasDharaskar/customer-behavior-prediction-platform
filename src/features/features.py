@@ -2,18 +2,6 @@ import pandas as pd
 import numpy as np
 
 def generate_features(clean_path: str, returns_path: str, cutoff_date: str = "2011-09-10", save_path: str = None) -> pd.DataFrame:
-    """
-    Generates domain-specific features and targets for customer behavior prediction using point-in-time cutoff.
-    
-    Args:
-        clean_path (str): Path to cleaned interim transactions CSV.
-        returns_path (str): Path to returned transactions CSV.
-        cutoff_date (str): Cutoff date for splitting history and future targets. Default is "2011-09-10".
-        save_path (str): Path to save the output processed CSV. Default is None.
-        
-    Returns:
-        pd.DataFrame: Processed customer-level dataset containing RFM, behavioral features, and targets.
-    """
     # Load data
     df_clean = pd.read_csv(clean_path)
     df_returns = pd.read_csv(returns_path)
