@@ -1,8 +1,8 @@
 {
     "python.analysis.extraPaths": [
-        "C:\\Users\\ojasd\\OneDrive\\Documents\\Desktop\\PProj\\customer-behavior-prediction"
+        "./"
     ],
     "python.autoComplete.extraPaths": [
-        "C:\\Users\\ojasd\\OneDrive\\Documents\\Desktop\\PProj\\customer-behavior-prediction"
+        "./"
     ]
 }
