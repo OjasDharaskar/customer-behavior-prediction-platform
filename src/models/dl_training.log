@@ -1,0 +1,53 @@
+2026-08-05 18:47:37,967 [INFO] Loading processed dataset from C:\Users\ojasd\projects\customer-behavior-prediction\data\processed\(PROC)online_retail_II.csv...
+2026-08-05 18:47:37,984 [INFO] Dataset loaded. Shape: (5346, 26). Number of features: 22.
+2026-08-05 18:47:37,985 [INFO] Encoding next purchase category labels...
+2026-08-05 18:47:38,015 [INFO] Number of classes for next purchase category: 1092
+2026-08-05 18:47:38,018 [INFO] Saved label encoder to C:\Users\ojasd\projects\customer-behavior-prediction\models_artifacts\label_encoder.joblib
+2026-08-05 18:47:38,018 [INFO] Splitting dataset into train (70%), validation (15%), and test (15%)...
+2026-08-05 18:47:38,025 [INFO] Train size: 3742 | Val size: 802 | Test size: 802
+2026-08-05 18:47:38,026 [INFO] Scaling features using StandardScaler...
+2026-08-05 18:47:38,034 [INFO] Saved scaler to C:\Users\ojasd\projects\customer-behavior-prediction\models_artifacts\dl_scaler.joblib
+2026-08-05 18:47:38,035 [INFO] Running 5-Fold Stratified Cross-Validation on Churn Classification...
+2026-08-05 18:47:38,199 [WARNING] TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-08-05 18:48:04,425 [INFO] Churn NN 5-Fold CV Results -> ROC-AUC: 0.7980 (+/- 0.0199) | Recall: 0.8200 (+/- 0.0217)
+2026-08-05 18:48:04,426 [INFO] Training final Churn NN model...
+2026-08-05 18:48:08,534 [INFO] 
+==========================================
+2026-08-05 18:48:08,535 [INFO] CHURN DL MODEL ON TEST SET:
+2026-08-05 18:48:08,536 [INFO] Accuracy: 0.7469
+2026-08-05 18:48:08,536 [INFO] Precision: 0.7466
+2026-08-05 18:48:08,537 [INFO] Recall: 0.8370
+2026-08-05 18:48:08,537 [INFO] F1-Score: 0.7892
+2026-08-05 18:48:08,538 [INFO] ROC-AUC: 0.8265
+2026-08-05 18:48:08,539 [INFO] Confusion Matrix:
+[[219 129]
+ [ 74 380]]
+2026-08-05 18:48:08,539 [INFO] ==========================================
+
+2026-08-05 18:48:08,585 [INFO] Saved best churn model to C:\Users\ojasd\projects\customer-behavior-prediction\models_artifacts\best_dl_churn_model.keras
+2026-08-05 18:48:08,586 [INFO] Running 5-Fold Stratified Cross-Validation on CLV Regression...
+2026-08-05 18:49:10,724 [INFO] CLV NN 5-Fold CV Results -> R2: 0.5142 (+/- 0.2258) | RMSE: 1374.4525 (+/- 658.5898)
+2026-08-05 18:49:10,725 [INFO] Training final CLV NN model...
+2026-08-05 18:49:22,205 [INFO] 
+==========================================
+2026-08-05 18:49:22,206 [INFO] CLV DL MODEL ON TEST SET:
+2026-08-05 18:49:22,207 [INFO] RMSE: 2965.7453
+2026-08-05 18:49:22,208 [INFO] R2: 0.6968
+2026-08-05 18:49:22,209 [INFO] MAE: 497.3491
+2026-08-05 18:49:22,210 [INFO] ==========================================
+
+2026-08-05 18:49:22,249 [INFO] Saved best CLV model to C:\Users\ojasd\projects\customer-behavior-prediction\models_artifacts\best_dl_clv_model.keras
+2026-08-05 18:49:22,251 [INFO] Running 5-Fold Stratified Cross-Validation on Next Category Classification...
+2026-08-05 18:49:42,859 [INFO] Next Category NN 5-Fold CV Results -> Accuracy: 0.5660 (+/- 0.0005) | F1-Score (Weighted): 0.4092 (+/- 0.0006)
+2026-08-05 18:49:42,860 [INFO] Training final Next Category NN model...
+2026-08-05 18:49:46,589 [INFO] 
+==========================================
+2026-08-05 18:49:46,590 [INFO] NEXT CATEGORY DL MODEL ON TEST SET (WEIGHTED METRICS):
+2026-08-05 18:49:46,590 [INFO] Accuracy: 0.5661
+2026-08-05 18:49:46,591 [INFO] Precision: 0.3205
+2026-08-05 18:49:46,591 [INFO] Recall: 0.5661
+2026-08-05 18:49:46,592 [INFO] F1-Score: 0.4092
+2026-08-05 18:49:46,593 [INFO] Confusion Matrix shape: (289, 289)
+2026-08-05 18:49:46,593 [INFO] ==========================================
+
+2026-08-05 18:49:46,614 [INFO] Saved best next category model to C:\Users\ojasd\projects\customer-behavior-prediction\models_artifacts\best_dl_next_category_model.keras
